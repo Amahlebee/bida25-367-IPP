@@ -23,6 +23,22 @@ A while loop is also used to make sure that the program user is repeatedly asked
  Section C changes the way student information is stored by replacing the list of tuples with dictionaries. Dictionaries are useful because information can be stored using a key and a value. In this section, the student's name is used as the key, while another dictionary containing their subjects and grades is used as the value.
  The program begins with an empty dictionary using students = {}. When a new student is entered, their grades are stored in another dictionary and then added to the main dictionary using students[name] = grades.
  The program can also update an existing student's grades by accessing their name and subject This allows a particular grade to be changed without affecting the other grades. A student can also be removed from the system using the del statement, such as del students[name].
+
+ Section D: Functions and Error Handling
+
+Section D improves the organisation and maintainability of the program by dividing repetitive tasks into reusable functions.
+
+The main functions include:
+
+add_student() which collects a student's name and subject grades and stores the record.
+calculate_average() which calculates the average of a student's grades.
+display_student() which displays an individual student's grades and average.
+display_summary() which displays the records of all students.
+search_update() which searches for a student and allows their grades to be updated.
+
+The program also uses `try` and `except` blocks to handle non-numeric grade inputs. Validation checks ensure that grades are within the permitted range of 0 to 100. The program displays informative messages when a student cannot be found, a subject is invalid, or an incorrect grade is entered.
+
+A menu allows users to select the operation they want to perform
  Section C also allows the user to view all grades for a particular subject across the entire class. The program uses a for loop with .items() to go through each student's name and grades.
  The program also includes a search feature that allows the user to enter a student's name and retrieve their grades and average. The program first checks whether the student exists using if search in students:. If the student is found, their grades are retrieved and their average is calculated
  
