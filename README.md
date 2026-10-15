@@ -30,11 +30,11 @@ Section D improves the organisation and maintainability of the program by dividi
 
 The main functions include:
 
-add_student() which collects a student's name and subject grades and stores the record.
-calculate_average() which calculates the average of a student's grades.
-display_student() which displays an individual student's grades and average.
-display_summary() which displays the records of all students.
-search_update() which searches for a student and allows their grades to be updated.
+- add_student() which collects a student's name and subject grades and stores the record.
+- calculate_average() which calculates the average of a student's grades.
+- display_student() which displays an individual student's grades and average.
+- display_summary() which displays the records of all students.
+- search_update() which searches for a student and allows their grades to be updated.
 
 The program also uses `try` and `except` blocks to handle non-numeric grade inputs. Validation checks ensure that grades are within the permitted range of 0 to 100. The program displays informative messages when a student cannot be found, a subject is invalid, or an incorrect grade is entered.
 
